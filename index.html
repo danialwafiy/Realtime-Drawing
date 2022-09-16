@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Drawing</title>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <canvas id="drawing-canvas" width="1200" height="600"></canvas>
+            <div class="buttons">
+                <button id="blue-btn">Blue</button>
+                <button id="red-btn">Red</button>
+                <button id="green-btn">Green</button>
+                <button id="yellow-btn">Yellow</button>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    html,
+    body {
+        height: 100%;
+        padding: 0;
+        background-color: black;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin-right: 15px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+    }
+
+    #drawing-canvas {
+        background-color: white;
+        border: 2px solid black;
+    }
+</style>
+
+</html>
